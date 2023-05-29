@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        *:focus {
+            outline: none;
+        }
+
+        html{
+            font-size: 10px;
+        }
+        body{
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            background-color: whitesmoke;
+        }
+        .container{
+            margin-left: 17.46rem;
+            margin-right: 28.7rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+        @media screen and (max-width:420px){    
+            .menu{
+                flex-direction: column;
+                align-items: center;
+
+            }
+            .container{
+                padding: 0;
+                margin: 0;
+            }
+ 
+        }
+        .menu{
+            display: flex;
+            margin-left: 9.5rem;
+            margin-top: 5.7rem;
+            box-shadow: 0px 0px 14px 0px rgb(0 0 0 / 24%); 
+            background-color: black;
+        }
+        .container .menu .left{
+            min-width: 47.5rem;
+            width: 47.5rem;
+            height: 51rem;
+            background-color: white;
+            
+            
+            
+        }
+        .container .menu .right{
+            min-width: 47.5rem;
+            width: 47.5rem;
+            height: 51rem;
+            background-color: #ec7511;
+            
+
+        }
+        .container .menu .left .aydep img{
+            width: 20rem;
+            height: 8rem;
+            margin-top: 9.5rem;
+            margin-left: 13.8rem;
+            margin-right: 5rem;
+            margin-bottom: 4rem;
+        }
+        label{
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-left: 5.3rem;
+            margin-top: 0.5rem;
+            display: inline-block;
+        }
+        .goz {
+            width: 4.17rem;
+            height: 2.8rem;
+            border: 0.1rem solid lightgrey;
+            border-radius: 0.5rem;
+            background-color: white;
+            position: absolute;
+
+        }
+        .goz img{
+            width: 1.7rem;
+            height: 2.5rem;
+
+            
+        }
+        input{
+            margin-top: 0.7rem;
+            width: 37.5rem;
+            height: 4.5rem;
+            margin-left: 5.3rem;
+            border: 0;
+            border-bottom: 0.1rem solid #ec7511;
+            background-color: #e8f0fe;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-left:1.6rem;
+            padding-right: 1.6rem;
+            font-size: large;
+        }
+        .goz:hover{
+            background-color: lightgray;
+            cursor: pointer;
+        }
+        .sifreunuttum a{
+            text-decoration: none;
+            color: #ec7511;
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-left: 5.3rem;
+            
+            margin-top: 2.5rem;
+            display: inline-block;
+            position: absolute;
+        }
+        .sifreunuttum a:hover{
+            text-decoration: underline;
+        }
+        .giris button{
+            float: right;
+            color: #ec7511;
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-right: 4.8rem;
+            margin-top: 1.5rem;
+            background-color: #ec7511;
+            color: white;
+            border-radius: 0.5rem;
+            padding-top: 0.7rem;
+            border: 1px solid #ec7511;
+            padding-bottom: 0.7rem;
+            padding-left: 1.9rem;
+            padding-right: 1.9rem;
+            
+        }
+        .giris button:hover{
+            color: black;
+            cursor: pointer;
+        }
+        .right h3{
+            color: white;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding-top: 5rem;
+            padding-left: 2.6rem;
+            padding-right: 1rem;
+            font-size: xx-large;
+            font-weight: 900;
+            display: inline-block;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        }
+        ul a{
+            
+            margin-bottom: 1rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-left: 0.2rem;
+            padding-right: 1rem;
+            color: white;
+            font-size: small;
+            font-weight: 900;
+            text-decoration: none;
+            display: inline-block; 
+        }
+        ul a:hover{
+            text-decoration: underline;
+        }
+        i{
+            font-size: medium;
+            color: white;
+            margin-left: 3rem;
+        }
+        .label{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="left">
+                <div class="aydep"><img src="https://aydep.ahievran.edu.tr/showcase/assets/images/logo/orjinal/aydep.png" alt=""></div>
+                <div class="label"><label for="">Sicil No / Öğrenci No:</label></div>
+                <button class="goz" type="button">
+                    <img src="https://free-icon-rainbow.com/i/icon_01891/icon_018910_256.png" alt="">
+                </button>
+                <div class="input"><input type="text"></div>
+                <div class="sifre"><Label>Şifre:</Label></div>
+                <div class="input"><input type="text"></div>
+                <div class="sifreunuttum"><a href="#">Şifremi Unuttum</a></div>
+                <div class="giris"><button>Giriş Yap</button></div>
+            </div>
+            <div class="right">
+                <h3>Kullanım Kılavuzları</h3>
+                <ul>
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <a href="#">Öğretim Elemanı (Videolar)</a><br>
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <a href="#">Öğretim Elamanı (PDF)</a><br>
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <a href="#">Öğrenci (PDF)</a><br>
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <a href="#">Öğrenci Sınav Giriş Ekranı</a>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
